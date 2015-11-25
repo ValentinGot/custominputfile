@@ -6,18 +6,30 @@
         <meta name="robots" content="noindex">
         <title>Demonstration of $.custominputfile</title>
 
+        <style>
+            *,
+            *:before,
+            *:after {
+                -webkit-box-sizing: border-box;
+                   -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+            }
+
+            body {
+                padding: 15px;
+            }
+        </style>
+        <link rel="stylesheet" href="normalize.css" media="screen" />
         <link rel="stylesheet" href="../dist/css/custominputfile.min.css" media="screen" />
     </head>
 
     <body>
-        <div class="file"></div>
-        <div class="file"></div>
-        <div class="file"></div>
+        <input type="file" name="ifile" id="ifile" />
 
         <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="../dist/js/custominputfile.min.js"></script>
         <script type="text/javascript">
-            $('.file').custominputfile();
+            $('input[type=file]').custominputfile();
         </script>
     </body>
 </html>
