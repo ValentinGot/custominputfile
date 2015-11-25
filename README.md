@@ -2,6 +2,8 @@
 
 A small jQuery module to easily stylize an input file
 
+![$.custominputfile demonstration](https://github.com/ValentinGot/custominputfile/blob/master/demo/custominputfile.png)
+
 ## Install
 
 You may install the $.custominputfile plugin via **bower** or **npm**.
