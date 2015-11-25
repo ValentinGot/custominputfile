@@ -1,0 +1,23 @@
+.lm-cif {
+  padding-left: 12px !important;
+}
+
+.lm-cif-btn {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #555555 !important;
+  background-color: #EEEEEE !important;
+  border: 1px solid #D3D3D3;
+  box-shadow: none;
+}
+
+.lm-cif-btn:hover {
+  color: #FFFFFF !important;
+  background-color: #00ACC1 !important;
+  border: 1px solid #00ACC1;
+  border-left: 0px none;
+}
+
+/*# sourceMappingURL=maps/custominputfile.css.map */
