@@ -62,28 +62,28 @@
 		----------------------------------------------*/
 		
 		// Wrapper
-		var wrapper = $("<div />", {
-			class: "custom-input-file-wrapper"
+		var wrapper = $('<div />', {
+			class: 'cif-wrapper'
 		});
 		
 		// Input
-		var customInput = $("<input />", {
-			type: "text",
-			class: "form-control form-control-no-animation lm-cif",
-			readonly: "readonly",
+		var customInput = $('<input />', {
+			type: 'text',
+			class: 'cif-text',
+			readonly: 'readonly',
 			value: settings.value
 		});
 
 		// Browse button
-		var customBrowseBtn = $("<a />", {
-			class: "btn btn-info lm-cif-btn"
+		var customBrowseBtn = $('<a />', {
+			class: 'cif-btn'
 		});
-		if(settings.icon !== "") {
+		if(settings.icon !== '') {
 			customBrowseBtn.append($('<span />', {
 				class: settings.icon,
 			}));
 		}
-		customBrowseBtn.append(((settings.icon !== "") ? "&nbsp;&nbsp;" : "") + settings.text);
+		customBrowseBtn.append(((settings.icon !== '') ? '&nbsp;&nbsp;' : '') + settings.text);
 
 		/*----------------------------------------------
 			Events
@@ -105,9 +105,9 @@
 			Display
 		----------------------------------------------*/
 	
-		inputFile.addClass("hide").wrap(wrapper);
-		inputFile.parent().append($("<div />", {
-			class: "input-group"
+		inputFile.addClass('hide').wrap(wrapper);
+		inputFile.parent().append($('<div />', {
+			class: 'cif-group'
 		}).append(customInput).append(customBrowseBtn));
 	};
 
