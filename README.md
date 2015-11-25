@@ -39,9 +39,9 @@ Available options listed below.
 
 ```json
 {
-    value: '',          // Default input value
-    icon : '',          // Button icon (only fonts can be used)
-    text : 'Browse'     // Button text
+    "value": "",        // Default input value
+    "icon": "",         // Button icon (only fonts can be used)
+    "text": "Browse"    // Button text
 }
 ```
 
