@@ -20,6 +20,7 @@
             }
         </style>
         <link rel="stylesheet" href="normalize.css" media="screen" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" media="screen" />
         <link rel="stylesheet" href="../dist/css/custominputfile.min.css" media="screen" />
     </head>
 
@@ -29,7 +30,10 @@
         <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="../dist/js/custominputfile.min.js"></script>
         <script type="text/javascript">
-            $('input[type=file]').custominputfile();
+            $('input[type=file]').custominputfile({
+                value: '//fakepath/to-be-uploaded-file.pdf',
+                icon : 'fa fa-upload'
+            });
         </script>
     </body>
 </html>
