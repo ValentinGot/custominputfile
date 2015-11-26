@@ -1,0 +1,25 @@
+{
+  "name": "custominputfile",
+  "description": "A small jQuery module to easily stylize an input file",
+  "main": "",
+  "authors": [
+    "Valentin GOT"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jQuery",
+    "input",
+    "file",
+    "module",
+    "plugin"
+  ],
+  "moduleType": [],
+  "homepage": "https://github.com/ValentinGot/custominputfile#readme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
