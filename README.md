@@ -29,7 +29,7 @@ Your code should the be similar to this:
 
 ### Creating a $.custominputfile
 
-To create a basic $.custominputfile, write the code below:
+To create a basic $.custominputfile, use the code below:
 
 ```javascript
 $('input[type=file]').custominputfile();
@@ -39,13 +39,14 @@ $('input[type=file]').custominputfile();
 
 Available options listed below.
 
-```json
-{
-    "value": "",        // Default input value
-    "icon": "",         // Button icon (only fonts can be used)
-    "text": "Browse"    // Button text
-}
-```
+* **theme**: $.custominputfile theme (default: 'cyan')
+* **value**: Default input value (default: '')
+* **icon** : Button icon (onfly icon fonts can be used) (default: '')
+* **text** : Button text (default: 'Browse')
+
+### Available themes
+
+![$.custominputfile themes](https://github.com/ValentinGot/custominputfile/blob/master/demo/themes.png)
 
 ## License
 
