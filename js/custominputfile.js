@@ -24,15 +24,39 @@
 (function ($) {
 
 	/**
+	 * theme : Theme (default: 'cyan')
 	 * value : Default input value (default: '')
 	 * icon	 : Button icon (default: '')
 	 * text  : Button text (default: 'Browse')
 	 */
 	var defaultOptions = {
+		theme: 'cyan',
 		value: '',
 		icon : '',
 		text : 'Browse'
 	};
+
+	var availableThemes = [
+		'red',
+		'pink',
+		'purple',
+		'deep-purple',
+		'indigo',
+		'blue',
+		'light-blue',
+		'cyan',
+		'teal',
+		'green',
+		'light-green',
+		'lime',
+		'yellow',
+		'amber',
+		'orange',
+		'deep-orange',
+		'brown',
+		'grey',
+		'blue-grey'
+	];
 
 	$.fn.custominputfile = function(options) {
 		this.each(function() {
@@ -45,7 +69,11 @@
 			var setting = null;
 			for(setting in settings)
 				settings[setting] = (cif.data(setting)) ? cif.data(setting) : settings[setting];
-				
+			
+			// Check theme availability
+			if (availableThemes.indexOf(settings.theme) === -1)
+				throw new Error('The theme "' + settings.theme + '" is not available.');
+
 			// Create the custom input file
 			createCustomInputFile.call(cif, settings);
 		});
@@ -63,7 +91,7 @@
 		
 		// Wrapper
 		var wrapper = $('<div />', {
-			class: 'cif-wrapper'
+			class: 'cif-wrapper cif-theme-' + settings.theme
 		});
 		
 		// Input

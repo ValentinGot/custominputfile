@@ -1,0 +1,18 @@
+/// Mixin creating a theme for $.custominputfile
+///
+/// @author Valentin GOT
+///
+/// @access public
+///
+/// @param {String} $color - Button color (on hover)
+/// @param {String} $backgroundColor - Button background color (on hover)
+/// @param {String} $borderColor - Button border-color (on hover)
+@mixin cif-theme($color, $backgroundColor, $borderColor) {
+    & .cif-btn:hover,
+    & .cif-btn:active,
+    & .cif-btn:focus {
+        color: $color;
+        background-color: $backgroundColor;
+        border-color: $borderColor;
+    }
+}

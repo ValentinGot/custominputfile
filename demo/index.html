@@ -6,31 +6,22 @@
         <meta name="robots" content="noindex">
         <title>Demonstration of $.custominputfile</title>
 
-        <style>
-            *,
-            *:before,
-            *:after {
-                -webkit-box-sizing: border-box;
-                   -moz-box-sizing: border-box;
-                        box-sizing: border-box;
-            }
-
-            body {
-                padding: 15px;
-            }
-        </style>
         <link rel="stylesheet" href="normalize.css" media="screen" />
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" media="screen" />
+        <link rel="stylesheet" href="demo.css" media="screen" />
         <link rel="stylesheet" href="../dist/css/custominputfile.min.css" media="screen" />
     </head>
 
     <body>
-        <input type="file" name="ifile" id="ifile" />
+        <div class="container">
+            <input type="file" name="ifile" id="ifile" />
+        </div>
 
         <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="../dist/js/custominputfile.min.js"></script>
         <script type="text/javascript">
             $('input[type=file]').custominputfile({
+                theme: 'blue-grey',
                 value: '//fakepath/to-be-uploaded-file.pdf',
                 icon : 'fa fa-upload'
             });

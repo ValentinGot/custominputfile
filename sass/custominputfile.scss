@@ -1,3 +1,6 @@
+@import 'color-palette';
+@import 'mixins';
+
 /*---------------------------------
     $.custominputfile
 ---------------------------------*/
@@ -38,15 +41,16 @@
             position: absolute;
             top: 0;
             right: 0;
+            height: 34px;
             line-height: 1.42857;
             margin-bottom: 0;
-            padding: 7px 15px 6px;
+            padding: 6px 15px 6px;
             color: #555555;
             background-color: #EEEEEE;
             font-size: 14px;
             font-weight: normal;
             text-align: center;
-            border: 1px solid #D3D3D3;
+            border: 1px solid #CCCCCC;
             vertical-align: middle;
             white-space: nowrap;
             touch-action: manipulation;
@@ -59,39 +63,29 @@
                 -ms-transition: all 0.5s ease 0s;
                  -o-transition: all 0.5s ease 0s;
                     transition: all 0.5s ease 0s;
-
-            &:hover,
-            &:active,
-            &:focus {
-                color: #FFFFFF;
-                background-color: #00ACC1;
-                border-color: #00ACC1;
-            }
         }
     }
 }
 
+/*  Themes
+---------------------------------*/
 
-
-
-.lm-cif {
-    padding-left: 12px !important;
-}
-
-.lm-cif-btn {
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #555555 !important;
-    background-color: #EEEEEE !important;
-    border: 1px solid #D3D3D3;
-    box-shadow: none;
-}
-
-.lm-cif-btn:hover {
-    color: #FFFFFF !important;
-    background-color: #00ACC1 !important;
-    border: 1px solid #00ACC1;
-    border-left: 0px none;
-}
+.cif-theme-red { @include cif-theme($red-color, $red-background-color, $red-border-color); }
+.cif-theme-pink { @include cif-theme($pink-color, $pink-background-color, $pink-border-color); }
+.cif-theme-purple { @include cif-theme($purple-color, $purple-background-color, $purple-border-color); }
+.cif-theme-deep-purple { @include cif-theme($deep-purple-color, $deep-purple-background-color, $deep-purple-border-color); }
+.cif-theme-indigo { @include cif-theme($indigo-color, $indigo-background-color, $indigo-border-color); }
+.cif-theme-blue { @include cif-theme($blue-color, $blue-background-color, $blue-border-color); }
+.cif-theme-light-blue { @include cif-theme($light-blue-color, $light-blue-background-color, $light-blue-border-color); }
+.cif-theme-cyan { @include cif-theme($cyan-color, $cyan-background-color, $cyan-border-color); }
+.cif-theme-teal { @include cif-theme($teal-color, $teal-background-color, $teal-border-color); }
+.cif-theme-green { @include cif-theme($green-color, $green-background-color, $green-border-color); }
+.cif-theme-light-green { @include cif-theme($light-green-color, $light-green-background-color, $light-green-border-color); }
+.cif-theme-lime { @include cif-theme($lime-color, $lime-background-color, $lime-border-color); }
+.cif-theme-yellow { @include cif-theme($yellow-color, $yellow-background-color, $yellow-border-color); }
+.cif-theme-amber { @include cif-theme($amber-color, $amber-background-color, $amber-border-color); }
+.cif-theme-orange { @include cif-theme($orange-color, $orange-background-color, $orange-border-color); }
+.cif-theme-deep-orange { @include cif-theme($deep-orange-color, $deep-orange-background-color, $deep-orange-border-color); }
+.cif-theme-brown { @include cif-theme($brown-color, $brown-background-color, $brown-border-color); }
+.cif-theme-grey { @include cif-theme($grey-color, $grey-background-color, $grey-border-color); }
+.cif-theme-blue-grey { @include cif-theme($blue-grey-color, $blue-grey-background-color, $blue-grey-border-color); }
