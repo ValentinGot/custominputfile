@@ -1,5 +1,8 @@
 # [$.custominputfile](https://github.com/ValentinGot/custominputfile)
 
+[![Bower version](https://badge.fury.io/bo/custominputfile.svg)](https://badge.fury.io/bo/custominputfile)
+[![npm version](https://badge.fury.io/js/custominputfile.svg)](https://badge.fury.io/js/custominputfile)
+
 A small jQuery module to easily stylize an input file
 
 ![$.custominputfile demonstration](https://github.com/ValentinGot/custominputfile/blob/master/demo/custominputfile.png)
