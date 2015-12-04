@@ -1,6 +1,7 @@
 {
   "name": "custominputfile",
   "description": "A small jQuery module to easily stylize an input file",
+  "version": "1.0.1",
   "main": "",
   "authors": [
     "Valentin GOT"
